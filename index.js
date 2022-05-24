@@ -1,5 +1,18 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for(let i = 0; i<array.length; i++){
+    let temp = array.slice(i)
+    for(let n = 1; n<temp.length;n++){
+      if( array[i] + temp[n] === target){
+        console.log(array[i])
+        console.log(temp[n])
+        console.log(target)
+        console.log(array[i] + temp[n])
+        return true
+      }
+    }
+  }
+  return false
 }
 
 /* 
